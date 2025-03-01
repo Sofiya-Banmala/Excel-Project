@@ -29,9 +29,9 @@ You can download this project here:
 
 This is an **Excel file** where I practiced some **essential Excel functions**. It includes commonly used formulas for counting, summing, filtering, and looking up data.  
 
-**Download the file here:** [Download Excel File](your-link-here)  
+**Download the file here:** [Download Excel File](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/Essential_Excel_Functions_for_Data_Analysis_Practise.xlsx)  
 
-## 🔢 Functions Used in the File  
+## Functions Used in the File  
 
 - **COUNTA** – Counts all non-empty rows in a given range.  
 - **COUNT** – Counts only numeric values in a range.  

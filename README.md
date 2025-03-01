@@ -25,6 +25,32 @@ The **% Expenses chart** is a Donut Chart, which looks like a pie chart but has 
 You can download this project here:
 [Download Budget Tracker File](https://github.com/Sofiya-Banmala/Excel-Project/raw/main/Budget%20Tracking%20Portfolio.xlsx)
 
+2. **Essential Excel Functions for Data Analysis**
+
+This is an **Excel file** where I practiced some **essential Excel functions**. It includes commonly used formulas for counting, summing, filtering, and looking up data.  
+
+**Download the file here:** [Download Excel File](your-link-here)  
+
+## 🔢 Functions Used in the File  
+
+- **COUNTA** – Counts all non-empty rows in a given range.  
+- **COUNT** – Counts only numeric values in a range.  
+- **COUNTIF** – Counts how many times a specific value appears in a range.  
+- **SUMIF** – Adds up values based on a condition.  
+- **COUNTIFS** – Counts values based on multiple conditions.  
+- **SUMIFS** – Adds up values based on multiple conditions.  
+- **AVERAGEIF** – Calculates the average of values that meet a condition.  
+- **MINIF / MAXIF** – Finds the smallest or largest value based on a condition.  
+- **MINIFS / MAXIFS** – Finds the smallest or largest value based on multiple conditions.  
+- **FILTER** – Filters data based on a condition.  
+- **SORT & TAKE** – Sorts data and extracts a subset of rows.  
+- **VLOOKUP** – Searches for a value in a column and returns a result from another column.  
+- **XLOOKUP** – A more flexible version of VLOOKUP.  
+- **CHOOSECOLS** – Selects specific columns from a dataset.  
+- **MEDIAN** – Finds the middle value of a dataset.  
+
+This file is useful for anyone learning **Data Analysis in Excel**.
+
 ## 📂 How to Use  
 1. **Browse** the repository to find the desired Excel tool.  
 2. **Download** the spreadsheet and open it in **Microsoft Excel** or **Google Sheets**.  

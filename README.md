@@ -22,6 +22,9 @@ The **Expenses Breakdown** chart shows how your total spending is divided into d
 
 The **% Expenses chart** is a Donut Chart, which looks like a pie chart but has a hole in the middle. It shows that 94% of your income goes to expenses, leaving only 6% as savings. Donut charts are great for dashboard reports because they look clean and make it easy to compare parts of a whole. They are often used instead of pie charts when you need a modern look with space for extra labels.
 
+You can download this project here:
+[Download Excel File](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/Budget%20Tracking%20Portfolio.xlsx)
+
 ## 📂 How to Use  
 1. **Browse** the repository to find the desired Excel tool.  
 2. **Download** the spreadsheet and open it in **Microsoft Excel** or **Google Sheets**.  

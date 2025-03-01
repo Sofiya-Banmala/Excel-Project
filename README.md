@@ -10,6 +10,8 @@ This repository serves as a centralized space to store and track all my Excel pr
 This project is a Budget Tracking project which is a simple and efficient tool for managing income, expenses, and savings.  
 
 ![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/income.JPG?raw=true)
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/expenses.JPG?raw=true)
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/donut.JPG?raw=true)
 
 ## 📂 How to Use  
 1. **Browse** the repository to find the desired Excel tool.  

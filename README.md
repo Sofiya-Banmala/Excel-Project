@@ -2,10 +2,10 @@
 
 This is my **Excel Projects** repository! It contains various projects built using Microsoft Excel, leveraging different functions and formulas. The projects focus on data analysis, data visualization, and reporting to support better decision-making. 
 
-## 🎯 Purpose  
+## Purpose  
 This repository serves as a centralized space to store and track all my Excel projects, improving efficiency and accessibility for future enhancements and collaborations.  
 
-## 📌 Projects Included  
+## Projects Included  
 1. **Budget Tracker**
    
 This project is a Budget Tracking project which is a simple and efficient tool for managing income, expenses, and savings.  
@@ -51,12 +51,18 @@ This is an **Excel file** where I practiced some **essential Excel functions**. 
 
 This file is useful for anyone learning **Data Analysis in Excel**.
 
-## 📂 How to Use  
+3. **Excel Case Study Questions Solving**
+
+Case Study 1
+Case Study 2
+Case Study 3
+
+## How to Use?  
 1. **Browse** the repository to find the desired Excel tool.  
 2. **Download** the spreadsheet and open it in **Microsoft Excel** or **Google Sheets**.  
 3. **Follow** the instructions in each file to input data and analyze results.  
 
-## 🤝 Contribution  
+## Contribution  
 Feel free to **fork**, **suggest improvements**, or share ideas for new Excel-based tools! 🚀  
 
 ---

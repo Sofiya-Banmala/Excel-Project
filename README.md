@@ -37,7 +37,7 @@ Here are some of the business questions that i solved using these functions and 
 
 This business questions helps to find the techniques covered that enables efficient calculation of salaries, headcounts, and averages, while also supporting dynamic data filtering, sorting, and gender-based analysis. They facilitate the generation of reports, advanced lookups, error handling, and statistical or time-based analysis, providing valuable insights for decision-making.
 
-# Functions Used in the File  
+**Functions Used in the File**
 
 - **COUNTA** – Counts all non-empty rows in a given range.  
 - **COUNT** – Counts only numeric values in a range.  

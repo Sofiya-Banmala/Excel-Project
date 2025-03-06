@@ -6,7 +6,7 @@ This is my **Excel Projects** repository! It contains various projects built usi
 This repository serves as a centralized space to store and track all my Excel projects, improving efficiency and accessibility for future enhancements and collaborations.  
 
 ## Projects Included  
-1. **Budget Tracker**
+### 1. **Budget Tracker**
    
 This project is a Budget Tracking project which is a simple and efficient tool for managing income, expenses, and savings.  
 
@@ -25,7 +25,7 @@ The **% Expenses chart** is a Donut Chart, which looks like a pie chart but has 
 You can download this project here:
 [Download Budget Tracker File](https://github.com/Sofiya-Banmala/Excel-Project/raw/main/Budget%20Tracking%20Portfolio.xlsx)
 
-2. **Essential Excel Functions for Data Analysis**
+### 2. **Essential Excel Functions for Data Analysis**
 
 This is an **Excel file** where I practiced some **essential Excel functions and formulas**. It includes common formulas used for basic calculations, lookup and reference, conditional counting, summing, filtering, and data organization and visualization required for data analysis tasks.  
 
@@ -37,7 +37,7 @@ Here are some of the business questions that i solved using these functions and 
 
 This business questions helps to find the techniques covered that enables efficient calculation of salaries, headcounts, and averages, while also supporting dynamic data filtering, sorting, and gender-based analysis. They facilitate the generation of reports, advanced lookups, error handling, and statistical or time-based analysis, providing valuable insights for decision-making.
 
-## Functions Used in the File  
+# Functions Used in the File  
 
 - **COUNTA** – Counts all non-empty rows in a given range.  
 - **COUNT** – Counts only numeric values in a range.  
@@ -57,10 +57,12 @@ This business questions helps to find the techniques covered that enables effici
 
 This file is useful for anyone learning **Data Analysis in Excel**.
 
-3. **Excel Case Study Questions Solving**
+### 3. **Excel Case Study Questions Solving**
 
 Case Study 1
+
 Case Study 2
+
 Case Study 3
 
 ## How to Use?  

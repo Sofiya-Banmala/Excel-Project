@@ -27,9 +27,15 @@ You can download this project here:
 
 2. **Essential Excel Functions for Data Analysis**
 
-This is an **Excel file** where I practiced some **essential Excel functions**. It includes commonly used formulas for counting, summing, filtering, and looking up data.  
+This is an **Excel file** where I practiced some **essential Excel functions and formulas**. It includes common formulas used for basic calculations, lookup and reference, conditional counting, summing, filtering, and data organization and visualization required for data analysis tasks.  
 
 **Download the file here:** [Download Excel File](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/Essential_Excel_Functions_for_Data_Analysis_Practise.xlsx)  
+
+Here are some of the business questions that i solved using these functions and formuas:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/excel%20func.JPG?raw=true)
+
+This business questions helps to find the techniques covered that enables efficient calculation of salaries, headcounts, and averages, while also supporting dynamic data filtering, sorting, and gender-based analysis. They facilitate the generation of reports, advanced lookups, error handling, and statistical or time-based analysis, providing valuable insights for decision-making.
 
 ## Functions Used in the File  
 

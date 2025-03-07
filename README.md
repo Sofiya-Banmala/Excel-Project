@@ -245,9 +245,6 @@ This analysis calculates the median salary and the female ratio across the entir
 - `=MEDIAN(staff[Salary])`: Calculates the median salary for all employees.
 - `=COUNTIFS(staff[Gender], "Female") / COUNTA(staff[Gender])`: Calculates the ratio of female employees in the entire dataset.
 
-
-
-
 **Functions Used in the File**
 
 - **COUNTA** – Counts all non-empty rows in a given range.  
@@ -266,15 +263,92 @@ This analysis calculates the median salary and the female ratio across the entir
 - **CHOOSECOLS** – Selects specific columns from a dataset.  
 - **MEDIAN** – Finds the middle value of a dataset.  
 
-This file is useful for anyone learning **Data Analysis in Excel**.
+This is useful for anyone learning **Data Analysis in Excel**.
 
 ### 3. **Excel Case Study Questions Solving**
 
-Case Study 1
+This repository contains multiple case studies and challenges designed to practice Excel formulas and data analysis techniques using sample datasets.
 
-Case Study 2
+## Datasets Involved:
 
-Case Study 3
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/sales.JPG?raw=true) |
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/churn.JPG?raw=true) |
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/emp.JPG?raw=true) |
+
+### **Case Study 1: Sales Data Analysis**
+
+#### Tasks:
+1. **Find total revenue for each region using a Pivot Table:**
+   - Create a PivotTable with **Region** as Rows and **Revenue** as Values to calculate the total revenue by region.
+   
+2. **Calculate the total sales made by each Sales Rep using SUMIFS():**
+   - Use the formula:
+     ```excel
+     =SUMIFS(Revenue, Sales Rep, "John")
+     ```
+   
+3. **Create a bar chart to compare total revenue by region:**
+   - After creating the PivotTable, select the data and insert a bar chart.
+
+4. **Highlight the top 5 highest sales transactions using Conditional Formatting:**
+   - Select the **Revenue** column and use **Conditional Formatting > Top/Bottom Rules > Top 10 Items** and set it to 5.
+     
+### **Case Study 2: Customer Churn Analysis**
+
+#### Tasks:
+1. **Calculate the number of active and churned customers using COUNTIFS():**
+   - Use the formula:
+     ```excel
+     =COUNTIFS(Status, "Active")
+     ```
+   
+2. **Find the average Monthly Plan value for churned customers using AVERAGEIFS():**
+   - Use the formula:
+     ```excel
+     =AVERAGEIFS(Monthly Plan, Status, "Churned")
+     ```
+   
+3. **Identify customers who haven't used the service in the last 6 months using IF() and TODAY():**
+   - Use the formula:
+     ```excel
+     =IF(DATEDIF(Last Activity Date, TODAY(), "m") > 6, "Inactive", "Active")
+     ```
+   
+4. **Create a Pie Chart to show the proportion of Active vs. Churned customers:**
+   - Use **COUNTIFS()** to count active and churned customers and insert a Pie Chart.
+
+### **Case Study 3: Employee Performance Dashboard**
+
+#### Tasks:
+1. **Calculate Efficiency (%) using the formula:**
+   - Use the formula:
+     ```excel
+     = (Tasks Completed / Hours Worked) * 100
+     ```
+   
+2. **Find the top-performing employee using LARGE() and INDEX():**
+   - Use the formula:
+     ```excel
+     =INDEX(Employee, MATCH(LARGE(Efficiency, 1), Efficiency, 0))
+     ```
+   
+3. **Use Conditional Formatting to highlight employees with efficiency above 30%:**
+   - Select the **Efficiency** column and apply **Conditional Formatting** with the formula `=B2>30`.
+
+4. **Create a dynamic dashboard using a Pivot Table and Slicers:**
+   - Create a PivotTable with employee data and add **Slicers** to filter by **Department**.
+
+### **Excel Formula Challenge**
+
+### **Excel Formula Challenge**
+**Task:** Write a formula to find the third-highest revenue in a sales dataset.
+- Use the formula:
+  ```excel
+  =LARGE(Revenue_Column, 3)
+
+### **Data Cleaning Challenge**
 
 ## How to Use?  
 1. **Browse** the repository to find the desired Excel tool.  

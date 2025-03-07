@@ -135,6 +135,35 @@ This analysis identifies the lowest, highest, and top 5 salary values within the
 - `=MAXIFS(staff[Salary], staff[Gender], "Female")`: Identifies the highest salary for female employees.
 - `=TAKE(SORT(staff[Salary], , -1), 5)`: Returns the top 5 highest salaries after sorting the dataset in descending order.
 
+**8 & 9. Department List Analysis: All Departments and Comma-Separated List**
+
+### Description:
+This analysis generates a list of all unique departments within the organization, as well as a comma-separated list of these departments. The goal is to provide an overview of the organizational structure by highlighting the various departments and creating a consolidated, easily-readable list for reporting purposes.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/8.JPG?raw=true)
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/9.JPG?raw=true)
+
+### Functions Used:
+- `=UNIQUE(staff[Department])`: Extracts a unique list of all departments from the `Department` column, removing duplicates.
+- `=TEXTJOIN(", ", TRUE, UNIQUE(staff[Department]))`: Combines all unique departments into a single cell, with each department name separated by a comma and a space. The `TRUE` argument ensures that any empty cells are ignored.
+
+**10. Employee Details Lookup**
+
+### Description:
+This analysis provides a lookup of employee details based on specific identifiers such as Employee ID or Last Name. The purpose of this analysis is to retrieve and display information about a particular employee, including their first name, last name, department, and salary, based on a given search criterion. This can be useful for HR departments, payroll teams, or any role requiring quick access to employee-specific data.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/1%0.JPG?raw=true)
+
+### Functions Used:
+- `=VLOOKUP(B3, staff, 2, 0)`: This function looks up the Employee ID (provided in cell `B3`) in the employee data (`staff`), retrieving the corresponding value from the second column (First Name in this case). The `0` argument ensures an exact match.
+- `=INDEX(staff[Emp ID], B15)`: This function uses the index to retrieve the Employee ID from the dataset based on the row number provided in `B15`.
+- `=MATCH(B14, staff[Last Name], 0)`: This function searches for the Last Name (given in `B14`) in the `staff` table and returns the row number where the last name is found. The `0` ensures that only an exact match is returned.
+
 
 
 

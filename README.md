@@ -267,7 +267,7 @@ This is useful for anyone learning **Data Analysis in Excel**.
 
 ### 3. **Excel Case Study Questions Solving**
 
-This repository contains multiple case studies and challenges designed to practice Excel formulas and data analysis techniques using sample datasets.
+This file [Download File](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/Excel_Interview_Practice.xlsx) contains multiple case studies and challenges designed to practice Excel formulas and data analysis techniques using sample datasets.
 
 ## Datasets Involved:
 
@@ -300,7 +300,6 @@ This repository contains multiple case studies and challenges designed to practi
 ## How to Use?  
 1. **Browse** the repository to find the desired Excel tool.  
 2. **Download** the spreadsheet and open it in **Microsoft Excel** or **Google Sheets**.  
-3. **Follow** the instructions in each file to input data and analyze results.  
 
 ## Contribution  
 Feel free to **fork**, **suggest improvements**, or share ideas for new Excel-based tools! 🚀  

@@ -39,7 +39,7 @@ This business questions helps to find the techniques covered that enables effici
 
 Below, we describe each business question in detail, along with the functions used to achieve the desired results.
 
-1. Total Salary and Headcount by Department
+**1. Total Salary and Headcount by Department**
 
 ### Description:
 This analysis calculates the total number of employees (HeadCount) and their total salary across different departments. Additionally, it separately calculates the headcount and total salary of permanent employees within each department.
@@ -63,9 +63,7 @@ This analysis calculates the total number of employees (HeadCount) and their tot
 - `=SUMIFS(staff[Salary], staff[Department], A4, staff[Employee type], "Permanent")`  
   - This function calculates the total salary of permanent employees in a given department.
 
----
-
-## 2. Average Salary by Department
+**2. Average Salary by Department**
 
 ### Description:
 This analysis calculates the average salary of employees in each department. The average salary provides insights into compensation distribution across departments.
@@ -74,6 +72,33 @@ This analysis calculates the average salary of employees in each department. The
 
 - `=AVERAGEIF(staff[Department], A4, staff[Salary])`  
   - This function calculates the average salary of employees in each department.
+
+**3. All Employees with More Than $100K Salary**
+
+### Description:
+This analysis identifies employees earning more than $100,000 annually across different departments. By filtering employees based on salary, we can gain insights into high-income earners within the organization. This data is useful for workforce planning, salary benchmarking, and identifying top-earning employees across locations.
+
+### Table Structure:
+
+
+### Functions Used:
+- `=FILTER(staff, staff[Salary] > D2)`: This function is used to filter and display all employees whose salary exceeds $100,000. The `FILTER` function dynamically retrieves records based on the salary condition.
+- `=staff[#Headers]`: This function is used to reference the column headers dynamically, ensuring that the extracted data includes appropriate labels.
+
+**4. All Female Employees with More Than $100K Salary**
+
+### Description:
+This analysis identifies all female employees who earn more than $100,000 annually. The purpose of this analysis is to examine gender-based salary distribution and identify high-earning female employees within the organization.
+
+### Table Structure:
+
+
+### Functions Used:
+- `=CHOOSECOLS(FILTER(staff, staff[Gender] = "Female", staff[Salary] > 100000), 1,2,3,4,5,6)`:  
+  - `FILTER(staff, staff[Gender] = "Female", staff[Salary] > 100000)`: Filters employees based on gender (Female) and salary greater than $100,000.
+  - `CHOOSECOLS(..., 1,2,3,4,5,6)`: Selects specific columns (Emp ID, First Name, Last Name, Gender, Department, Salary) from the filtered data.
+
+
 
 
 **Functions Used in the File**

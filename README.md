@@ -39,14 +39,14 @@ This business questions helps to find the techniques covered that enables effici
 
 Below, we describe each business question in detail, along with the functions used to achieve the desired results.
 
-
-## 1. Total Salary and Headcount by Department
+1. Total Salary and Headcount by Department
 
 ### Description:
 This analysis calculates the total number of employees (HeadCount) and their total salary across different departments. Additionally, it separately calculates the headcount and total salary of permanent employees within each department.
 
 ### Table Structure:
 
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/1an%202.JPG?raw=true)
 
 
 ### Functions Used:
@@ -69,10 +69,6 @@ This analysis calculates the total number of employees (HeadCount) and their tot
 
 ### Description:
 This analysis calculates the average salary of employees in each department. The average salary provides insights into compensation distribution across departments.
-
-### Table Structure:
-
-
 
 ### Function Used:
 

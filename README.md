@@ -330,7 +330,10 @@ This project is valuable for aspiring **Data Analysts, Business Analysts, and Ex
 **Excel Automation & Analysis**  
 **Visualization & Dashboarding**  
 
-# **Australian Housing Data Project**
+# **Australian Housing Data Analysis Project**
+
+## Project Overview
+
 
 ## How to Use?  
 1. **Browse** the repository to find the desired Excel tool.  

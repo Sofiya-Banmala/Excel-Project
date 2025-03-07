@@ -80,6 +80,7 @@ This analysis identifies employees earning more than $100,000 annually across di
 
 ### Table Structure:
 
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/3.JPG?raw=true)
 
 ### Functions Used:
 - `=FILTER(staff, staff[Salary] > D2)`: This function is used to filter and display all employees whose salary exceeds $100,000. The `FILTER` function dynamically retrieves records based on the salary condition.
@@ -92,6 +93,7 @@ This analysis identifies all female employees who earn more than $100,000 annual
 
 ### Table Structure:
 
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/4.JPG?raw=true)
 
 ### Functions Used:
 - `=CHOOSECOLS(FILTER(staff, staff[Gender] = "Female", staff[Salary] > 100000), 1,2,3,4,5,6)`:  

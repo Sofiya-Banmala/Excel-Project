@@ -164,6 +164,86 @@ This analysis provides a lookup of employee details based on specific identifier
 - `=INDEX(staff[Emp ID], B15)`: This function uses the index to retrieve the Employee ID from the dataset based on the row number provided in `B15`.
 - `=MATCH(B14, staff[Last Name], 0)`: This function searches for the Last Name (given in `B14`) in the `staff` table and returns the row number where the last name is found. The `0` ensures that only an exact match is returned.
 
+**11. Employee Details Lookup**
+
+### Description:
+This analysis provides a lookup for employee details based on the Employee ID. The `XLOOKUP` function is used to search for a specific employee's ID in the dataset and return corresponding employee details, such as their first name, last name, department, and salary.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/11.JPG?raw=true)
+
+### Formula Used:
+- `=XLOOKUP(C3, staff[Emp ID], staff[First Name], "NA")`: This function looks up the Employee ID provided in `C3` in the dataset `staff`, returning the corresponding first name. If the ID is not found, it returns "NA".
+
+
+**12. Complex Formula: Highest Salary Person**
+
+### Description:
+This analysis identifies the person with the highest salary in the dataset. It uses the `MAX` function to find the highest salary and `XLOOKUP` and `FILTER` to return the name(s) of the employee(s) earning that salary.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/12.JPG?raw=true)
+
+### Formula Used:
+- `=MAX(staff[Salary])`: Finds the maximum salary in the `staff` dataset.
+- `=XLOOKUP(C3, staff[Salary], staff[First Name] & " " & staff[Last Name], "NA", 0)`: Looks up the highest salary and returns the corresponding employee's full name.
+- `=FILTER(staff[First Name], staff[Salary] >= MAX(staff[Salary]))`: Filters and lists the first names of employees who have the highest salary.
+
+**13. Complex Formula: All Employees Joined in March**
+
+### Description:
+This formula filters and displays all employees who joined in the month of March. It uses the `FILTER` function in combination with `MONTH` to isolate employees who have a start date in March.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/13.JPG?raw=true)
+
+### Formula Used:
+- `=CHOOSECOLS(FILTER(staff, MONTH(staff[Start Date]) = 3), 1, 2, 3)`: Filters the employees who started in March and returns the selected columns (Emp ID, First Name, Last Name).
+
+
+**14. Complex Formula: Female Employees with Monday Start**
+
+### Description:
+This formula filters female employees who started their employment on a Monday. It uses the `FILTER` function in combination with `TEXT` to check the start date and gender.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/14.JPG?raw=true)
+
+### Formula Used:
+- `=FILTER(staff, (staff[Gender] = "Female") * (TEXT(staff[Start Date], "dddd") = "Monday"))`: Filters female employees whose start date falls on a Monday.
+
+
+**15. Complex Formula: Department Report of Headcounts, Salaries, and % Diff from Overall Average**
+
+### Description:
+This analysis calculates key metrics for each department, including headcount, average salary, percentage difference from the overall average salary, highest salary, median salary, and female ratio. The `UNIQUE`, `COUNTIF`, `AVERAGEIF`, `MAXIFS`, `MEDIAN`, and `COUNTIFS` functions are used to generate the required data.
+
+### Table Structure:
+ 
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/1516.JPG?raw=true) |
+
+### Formula Used:
+- `=UNIQUE(staff[Department])`: Lists all unique departments.
+- `=COUNTIF(staff[Department], A6)`: Counts the number of employees in the specified department.
+- `=AVERAGEIF(staff[Department], A6, staff[Salary])`: Calculates the average salary for a department.
+- `=(C3 - C6) / C3`: Calculates the percentage difference from the overall average salary.
+- `=MAXIFS(staff[Salary], staff[Department], A7)`: Finds the highest salary in a given department.
+- `=MEDIAN(FILTER(staff[Salary], staff[Department] = A6))`: Calculates the median salary for a specific department.
+- `=COUNTIFS(staff[Department], A6, staff[Gender], "Female") / COUNTIF(staff[Department], A6)`: Calculates the female ratio in a department.
+
+
+**16. Calculate Median Salary and Female Ratio**
+
+### Description:
+This analysis calculates the median salary and the female ratio across the entire staff or by department. It uses the `MEDIAN` function and `COUNTIFS` to analyze salary and gender data.
+
+### Formula Used:
+- `=MEDIAN(staff[Salary])`: Calculates the median salary for all employees.
+- `=COUNTIFS(staff[Gender], "Female") / COUNTA(staff[Gender])`: Calculates the ratio of female employees in the entire dataset.
 
 
 

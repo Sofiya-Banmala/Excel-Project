@@ -6,7 +6,7 @@ This is my **Excel Projects** repository! It contains various projects built usi
 This repository serves as a centralized space to store and track all my Excel projects, improving efficiency and accessibility for future enhancements and collaborations.  
 
 ## Projects Included  
-### 1. **Budget Tracker**
+# 1. **Budget Tracker**
    
 This project is a Budget Tracking project which is a simple and efficient tool for managing income, expenses, and savings.  
 
@@ -25,7 +25,7 @@ The **% Expenses chart** is a Donut Chart, which looks like a pie chart but has 
 You can download this project here:
 [Download Budget Tracker File](https://github.com/Sofiya-Banmala/Excel-Project/raw/main/Budget%20Tracking%20Portfolio.xlsx)
 
-### 2. **Essential Excel Functions for Data Analysis**
+# 2. **Essential Excel Functions for Data Analysis**
 
 This is an **Excel file** where I practiced some **essential Excel functions and formulas**. It includes common formulas used for basic calculations, lookup and reference, conditional counting, summing, filtering, and data organization and visualization required for data analysis tasks.  
 
@@ -265,7 +265,7 @@ This analysis calculates the median salary and the female ratio across the entir
 
 This is useful for anyone learning **Data Analysis in Excel**.
 
-### 3. **Excel Case Study Questions Solving**
+# 3. **Excel Case Study Questions Solving**
 
 This file [Download File](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/Excel_Interview_Practice.xlsx) contains multiple case studies and challenges designed to practice Excel formulas and data analysis techniques using sample datasets.
 
@@ -329,6 +329,8 @@ This project is valuable for aspiring **Data Analysts, Business Analysts, and Ex
 **Data-Driven Decision Making**  
 **Excel Automation & Analysis**  
 **Visualization & Dashboarding**  
+
+# **Australian Housing Data Project**
 
 ## How to Use?  
 1. **Browse** the repository to find the desired Excel tool.  

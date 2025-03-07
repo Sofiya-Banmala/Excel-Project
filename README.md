@@ -99,6 +99,42 @@ This analysis identifies all female employees who earn more than $100,000 annual
 - `=CHOOSECOLS(FILTER(staff, staff[Gender] = "Female", staff[Salary] > 100000), 1,2,3,4,5,6)`:  
   - `FILTER(staff, staff[Gender] = "Female", staff[Salary] > 100000)`: Filters employees based on gender (Female) and salary greater than $100,000.
   - `CHOOSECOLS(..., 1,2,3,4,5,6)`: Selects specific columns (Emp ID, First Name, Last Name, Gender, Department, Salary) from the filtered data.
+ 
+**5. All Female Employees with More Than $100K Salary Who Joined in 2020 or After**
+
+### Description:
+This analysis identifies all female employees who earn more than $100,000 annually and joined the organization in 2020 or later. The purpose of this analysis is to understand the impact of recent hires with high salaries and assess trends related to high-earning female employees in the company.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/5.JPG?raw=true)
+
+### Functions Used:
+- `=FILTER(staff, (staff[Gender]="Female") * (staff[Salary]>100000) * (YEAR(staff[Start Date])>=2020))`:
+  - `FILTER(staff, ...)`: Filters the dataset based on the specified conditions.
+  - `(staff[Gender]="Female")`: Filters for female employees.
+  - `(staff[Salary]>100000)`: Filters for employees with a salary greater than $100,000.
+  - `(YEAR(staff[Start Date])>=2020)`: Filters for employees who joined in 2020 or after.
+
+**6 & 7. Salary Analysis: Lowest, Highest, and Top 5 Salary Values (Overall and by Gender)**
+
+### Description:
+This analysis identifies the lowest, highest, and top 5 salary values within the organization as well as by gender (Male and Female). The goal is to assess salary distribution across the workforce, highlight trends within different genders, and identify the range of salaries, including the highest earners. This will help evaluate overall salary equity and gender-based disparities, if any, in compensation within the company.
+
+### Table Structure:
+
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/67.JPG?raw=true)
+
+### Functions Used:
+- `=MIN(staff[Salary])`: Identifies the lowest salary across all employees.
+- `=MAX(staff[Salary])`: Identifies the highest salary across all employees.
+- `=LARGE(staff[Salary], E6)`: Returns the top 5 highest salary values from the dataset based on the rank number (from 1 for the highest, 2 for second highest, etc.).
+- `=MINIFS(staff[Salary], staff[Gender], "Male")`: Identifies the lowest salary for male employees.
+- `=MAXIFS(staff[Salary], staff[Gender], "Male")`: Identifies the highest salary for male employees.
+- `=MINIFS(staff[Salary], staff[Gender], "Female")`: Identifies the lowest salary for female employees.
+- `=MAXIFS(staff[Salary], staff[Gender], "Female")`: Identifies the highest salary for female employees.
+- `=TAKE(SORT(staff[Salary], , -1), 5)`: Returns the top 5 highest salaries after sorting the dataset in descending order.
+
 
 
 

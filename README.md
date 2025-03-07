@@ -157,7 +157,7 @@ This analysis provides a lookup of employee details based on specific identifier
 
 ### Table Structure:
 
-![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/1%0.JPG?raw=true)
+![image alt](https://github.com/Sofiya-Banmala/Excel-Project/blob/main/10.JPG?raw=true)
 
 ### Functions Used:
 - `=VLOOKUP(B3, staff, 2, 0)`: This function looks up the Employee ID (provided in cell `B3`) in the employee data (`staff`), retrieving the corresponding value from the second column (First Name in this case). The `0` argument ensures an exact match.

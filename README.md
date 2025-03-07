@@ -37,6 +37,49 @@ Here are some of the business questions that i solved using these functions and 
 
 This business questions helps to find the techniques covered that enables efficient calculation of salaries, headcounts, and averages, while also supporting dynamic data filtering, sorting, and gender-based analysis. They facilitate the generation of reports, advanced lookups, error handling, and statistical or time-based analysis, providing valuable insights for decision-making.
 
+Below, we describe each business question in detail, along with the functions used to achieve the desired results.
+
+
+## 1. Total Salary and Headcount by Department
+
+### Description:
+This analysis calculates the total number of employees (HeadCount) and their total salary across different departments. Additionally, it separately calculates the headcount and total salary of permanent employees within each department.
+
+### Table Structure:
+
+
+
+### Functions Used:
+
+- `=COUNTIF(staff[Department], A4)`  
+  - This function counts the number of employees in a given department.
+
+- `=SUMIF(staff[Department], A5, staff[Salary])`  
+  - This function calculates the total salary of all employees in a given department.
+
+- `=COUNTIFS(staff[Department], A5, staff[Employee type], "Permanent")`  
+  - This function counts the number of permanent employees in a given department.
+
+- `=SUMIFS(staff[Salary], staff[Department], A4, staff[Employee type], "Permanent")`  
+  - This function calculates the total salary of permanent employees in a given department.
+
+---
+
+## 2. Average Salary by Department
+
+### Description:
+This analysis calculates the average salary of employees in each department. The average salary provides insights into compensation distribution across departments.
+
+### Table Structure:
+
+
+
+### Function Used:
+
+- `=AVERAGEIF(staff[Department], A4, staff[Salary])`  
+  - This function calculates the average salary of employees in each department.
+
+
 **Functions Used in the File**
 
 - **COUNTA** – Counts all non-empty rows in a given range.  
